@@ -24,7 +24,7 @@ void setup() {
   lcd.print(" Car Parking ");
   lcd.setCursor(0, 1);
   lcd.print("    System   ");
-  delay(500);
+  delay(2000);
   lcd.clear();
   
   availableSpace = totalSpace;
@@ -59,7 +59,7 @@ void loop() {
   }
 
   if (gate1 == 1 && gate2 == 1){
-    delay(500);
+    delay(1000);
     motor.write(100);
     gate1 = 0, gate2 = 0;
   }
